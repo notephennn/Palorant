@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         agents.forEach((agent, i) => {
             if (i === index) {
                 agent.classList.add("active"); // Tampilkan agent yang dipilih
+                playFirstAbility(agent);
             } else {
                 agent.classList.remove("active"); // Sembunyikan lainnya
             }
@@ -25,46 +26,41 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Tambahkan event listener ke setiap agent di navbar
-    agentBoxes.forEach((box, index) => {
-        box.addEventListener("click", () => showAgent(index));
-    });
+    function playFirstAbility(agentElement) {
+        const videoElement = agentElement.querySelector(".video-abilities video");
+        const agentName = agentElement.querySelector(".char1nama").innerText.toLowerCase();
+        changeVideo(agentName, 1);
+    }
 
-    // Set default agent (Phoenix) saat pertama kali load
-    showAgent(0);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     function changeVideo(agent, abilityIndex) {
         const videoElement = document.getElementById(`${agent}Video`);
         if (videoElement) {
             const videoSource = videoElement.querySelector("source");
-
-            // Tambahkan efek fade-out sebelum mengubah video
-            videoElement.style.opacity = "0"; 
-
+            
+            videoElement.style.opacity = "0";
             setTimeout(() => {
-                videoSource.src = `../ASSET/${agent}a${abilityIndex}.mp4`; // Sesuaikan dengan nama file
-                videoElement.load(); // Reload video untuk menerapkan perubahan
-                videoElement.play(); // Langsung play setelah berubah
-
-                // Tambahkan efek fade-in setelah sedikit delay
+                videoSource.src = `../ASSET/${agent}a${abilityIndex}.mp4`;
+                videoElement.load();
+                videoElement.play();
                 setTimeout(() => {
                     videoElement.style.opacity = "1";
-                }, 40); // Durasi fade-in (500ms)
-            }, 40); // Durasi fade-out (500ms)
+                }, 40);
+            }, 40);
         }
     }
 
-    // Tambahkan event listener ke semua ability icons
+    agentBoxes.forEach((box, index) => {
+        box.addEventListener("click", () => showAgent(index));
+    });
+
     const abilityIcons = document.querySelectorAll(".abilities-icons img");
     abilityIcons.forEach((icon) => {
         icon.addEventListener("click", function () {
-            const agent = this.getAttribute("onclick").match(/'([^']+)'/)[1]; // Ambil nama agent
-            const abilityIndex = this.getAttribute("onclick").match(/, (\d+)/)[1]; // Ambil nomor ability
+            const agent = this.getAttribute("onclick").match(/'([^']+)'/)[1];
+            const abilityIndex = this.getAttribute("onclick").match(/, (\d+)/)[1];
             changeVideo(agent, abilityIndex);
         });
     });
+
+    showAgent(0); // Set default agent (Phoenix) saat pertama kali load
 });
-
-
