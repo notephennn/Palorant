@@ -258,7 +258,7 @@ nav a:hover {
 
 
 .abilities-icons img {
-    width: 70px; /* Ukuran ikon ability */
+    width: 85px; /* Ukuran ikon ability */
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     background-color: black;
