@@ -156,9 +156,14 @@ footer {
     font-family: 'Viking';
 }
 
-.news{
-    display: flex;
-    gap: 2vw;
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    grid-template-rows: repeat(2, auto); /* Membuat 2 baris */
+    gap: 2vw; /* Jarak antar kartu */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
