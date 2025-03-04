@@ -104,60 +104,91 @@ footer {
 
 /* news */
 
-main {
-    padding: 40px;
-    background-color: #f4f4f4;
-}
-
-/* News Section */
-.news {
-    max-width: 900px;
-    margin: auto;
-}
-
-.news h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* News Card */
-.news-card {
+.bag2{
+    /* background: url("./assets/woodbg.jpg"); */
+    background-size: cover;
+    background-position: center;
+    height: max-content;
+    padding: 5vh;
+    min-height: 125vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    background: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.news-card img {
-    width: 150px;
-    height: 100%;
-    object-fit: cover;
+.container{
+    /* background: url("./assets/newsbg2.jpg"); */
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 5vw;
+    /* border: 5px solid #000000; */
+    border-radius: 5vh;
 }
 
-.news-content {
-    padding: 15px;
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
 }
 
-.news-content h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.pala{
+    /* background-image: url("./assets/woodplate.png"); */
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.news-content p {
-    font-size: 14px;
-    color: #555;
+.subcontainer h2{
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Viking';
 }
 
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
+.news{
+    display: flex;
+    gap: 2vw;
 }
 
-.read-more:hover {
-    text-decoration: underline;
+.card{
+    width: 100%;
+    height: max-content;
+    /* background: url("./assets/charbg.jpg"); */
+    background-size: cover;
+    padding: 2vw;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    /* background-color: black; */
+}
+
+.card h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+}
+
+.card p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+.card img{
+    align-self: center;
+    width: 15vw;
+    height: 80%;
 }
