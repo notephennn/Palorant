@@ -1,47 +1,56 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const mapBoxes = document.querySelectorAll(".box");
-    const maps = document.querySelectorAll(".container");
+    const mapBoxes = document.querySelectorAll(".box"); // Semua box map
+    const mapContainers = document.querySelectorAll(".container"); // Semua deskripsi map
 
-    if (mapBoxes.length === 0 || maps.length === 0) {
+    if (mapBoxes.length === 0 || mapContainers.length === 0) {
         console.error("Map elements not found!");
         return;
     }
 
     function showMap(index) {
-        maps.forEach((map, i) => {
+        mapContainers.forEach((map, i) => {
             map.classList.toggle("active", i === index);
+            if (i === index) {
+                setFirstAbilityImage(map);
+            }
         });
+
         mapBoxes.forEach((box, i) => {
             box.classList.toggle("active", i === index);
         });
     }
 
-    mapBoxes.forEach((box, index) => {
-        box.addEventListener("click", () => showMap(index));
-    });
+    function setFirstAbilityImage(mapElement) {
+        const abilityImageContainer = mapElement.querySelector(".video-abilities img");
+        const firstAbilityIcon = mapElement.querySelector(".asset-icons img");
 
-    showMap(0);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    function changeImage(map, locationIndex) {
-        const videoElement = document.getElementById(`${map}Video`);
-        if (videoElement) {
-            videoElement.style.backgroundImage = `url('../ASSET/${map}l${locationIndex}.png')`;
-            videoElement.style.backgroundSize = "cover";
-            videoElement.style.backgroundPosition = "center";
+        if (abilityImageContainer && firstAbilityIcon) {
+            const match = firstAbilityIcon.getAttribute("onclick").match(/'([^']+)', (\d+)/);
+            if (match) {
+                const mapName = match[1];
+                abilityImageContainer.src = `../ASSET/${mapName}a1.png`; // Set gambar pertama
+            }
         }
     }
 
     document.querySelectorAll(".asset-icons img").forEach((icon) => {
-        icon.addEventListener("mouseover", function () {
+        icon.addEventListener("click", function () {
             const match = this.getAttribute("onclick").match(/'([^']+)', (\d+)/);
             if (match) {
-                const map = match[1];
-                const locationIndex = match[2];
-                changeImage(map, locationIndex);
+                const mapName = match[1];
+                const abilityIndex = match[2];
+                const abilityImageContainer = document.getElementById(`${mapName}Image`);
+
+                if (abilityImageContainer) {
+                    abilityImageContainer.src = `../ASSET/${mapName}a${abilityIndex}.png`;
+                }
             }
         });
     });
+
+    mapBoxes.forEach((box, index) => {
+        box.addEventListener("click", () => showMap(index));
+    });
+
+    showMap(0); // Set default map pertama saat halaman dimuat
 });
-    

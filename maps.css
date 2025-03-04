@@ -213,10 +213,11 @@ footer {
 }
 
 .asset-icons img {
-    width: 100px; /* Ukuran ikon ability */
+    width: 150px; /* Ukuran ikon ability */
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     background-color: black;
+    border: 3px solid transparent;
 }
 
 .asset-icons img:hover {
@@ -241,9 +242,8 @@ footer {
     max-width: 400px; /* Batasi ukuran video */
 }
 
-.video-abilities video {
+.video-abilities img {
     width: 100%;
-    max-width: 400px;
+    max-width: 550px;
     height: auto;
-    border-radius: 10px;
 }
