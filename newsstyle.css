@@ -171,12 +171,13 @@ footer {
     height: max-content;
     background-size: cover;
     padding: 2vw;
-    justify-content: center;
+    /* justify-content: center; */
     align-self: center;
     display: flex;
     flex-direction: column;
     gap: 2vh;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    justify-content: flex-start;
 }
 
 .card:hover {
@@ -190,18 +191,20 @@ footer {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2vw;
+    min-height: 50px;
 }
 
-.card p{
+.card img {
+    width: 100%; /* Gunakan lebar penuh */
+    max-height: 180px; /* Batasi tinggi gambar */
+    object-fit: cover; /* Hindari distorsi */
+}
+
+.card p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2vw;
     text-align: justify;
-}
-
-.card img{
-    align-self: center;
-    width: 15vw;
-    height: 80%;
+    min-height: 100px; /* Memastikan tinggi teks sejajar */
 }
 
 .read-more {
