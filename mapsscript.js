@@ -7,6 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
+    // Daftar warna untuk setiap maps
+    const mapColors = {
+        bind: "#ff5733",
+        haven: "#33ff57",
+        ascent: "#3357ff",
+        split: "#ff33a8",
+        icebox: "#33fff2",
+        breeze: "#f2ff33",
+        fracture: "#a833ff",
+        pearl: "#ff8333",
+        lotus: "#33ff83"
+    };
+
     function showMap(index) {
         mapContainers.forEach((map, i) => {
             map.classList.toggle("active", i === index);
@@ -17,6 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         mapBoxes.forEach((box, i) => {
             box.classList.toggle("active", i === index);
+
+            // Ambil nama map dari atribut data-map
+            let mapName = box.dataset.map;
+
+            // Ubah warna box.active sesuai dengan map yang diklik
+            if (i === index && mapColors[mapName]) {
+                box.style.backgroundColor = mapColors[mapName];
+            } else {
+                box.style.backgroundColor = ""; // Kembalikan ke warna default saat tidak aktif
+            }
         });
     }
 

@@ -83,8 +83,44 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.box:hover {
-    background-color: red; /* Hover effect */
+.box.active.Bind {
+    background-color: #ff5733 !important;
+}
+
+.box.active.Haven {
+    background-color: #33ff57 !important;
+}
+
+.box.active.Split {
+    background-color: #ff33a8 !important;
+}
+
+.box.active.Ascent {
+    background-color: #3357ff !important;
+}
+
+.box.active.Icebox {
+    background-color: #33fff2 !important;
+}
+
+.box.Bind:hover {
+    background-color: #ff5733;
+}
+
+.box.Haven:hover {
+    background-color: #33ff57;
+}
+
+.box.Split:hover {
+    background-color: #ff33a8;
+}
+
+.box.Ascent:hover {
+    background-color: #3357ff;
+}
+
+.box.Icebox:hover {
+    background-color: #33fff2;
 }
 
 /* Bagian Bawah */
@@ -164,7 +200,7 @@ footer {
 }
 
 .box.active {
-    background-color: red;
+    /* background-color: red; */
     border-radius: 10px;
     transition: background 0.3s;
 }
