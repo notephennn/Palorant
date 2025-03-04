@@ -164,15 +164,21 @@ footer {
 .card{
     width: 100%;
     height: max-content;
-    /* background: url("./assets/charbg.jpg"); */
     background-size: cover;
     padding: 2vw;
     justify-content: center;
     align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
-    /* background-color: black; */
+    gap: 2vh;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    color: white;
 }
 
 .card h3{
@@ -191,4 +197,20 @@ footer {
     align-self: center;
     width: 15vw;
     height: 80%;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff4655;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background-color: #d63b48;
 }
