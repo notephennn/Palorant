@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <link rel="stylesheet" href="maps.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="reportbug.html">Report Bug</a></li>
+        </ul>
+    </nav>
+
+    <div class="boxcontainer">
+        <div class="box active"><img src="../ASSET/maps11.png" alt="Bind"><span>Bind</span></div>
+        <div class="box"><img src="../ASSET/maps31.png" alt="Haven"><span>Haven</span></div>
+        <div class="box"><img src="../ASSET/maps41.png" alt="Split"><span>Split</span></div>
+        <div class="box"><img src="../ASSET/maps51.png" alt="Split"><span>Ascent</span></div>
+        <div class="box"><img src="../ASSET/maps21.png" alt="Icebox"><span>Ice Box</span></div>
+    </div>
+
+    <section class="wholebox">
+        <div class="list">
+            <div class="container active">
+                <div class="maps1">
+                    <img src="../ASSET/maps11.png">
+                </div>
+                <div class="char1description">
+                    <h1 class="char1nama">
+                        Bind
+                    </h1>
+                    <div class="asset-container">
+                        <div class="asset-icons">
+                            <img src="../ASSET/binda1.png" onclick="changeVideo('bind', 1)">
+                            <img src="../ASSET/binda2.png" onclick="changeVideo('bind', 2)">
+                            <img src="../ASSET/binda3.png" onclick="changeVideo('bind', 3)">
+                            <img src="../ASSET/binda4.png" onclick="changeVideo('bind', 4)">
+                        </div>
+                        <div class="video-abilities">
+                            <video id="bindVideo" controls autoplay muted>
+                                <source src="../ASSET/bind.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="char1info">
+                        Bind adalah map dengan dua site dan teleport unik yang memungkinkan rotasi cepat antara area.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="maps1">
+                    <img src="../ASSET/maps31.png">
+                </div>
+                <div class="char1description">
+                    <h1 class="char1nama">
+                        Haven
+                    </h1>
+                    <div class="asset-container">
+                        <div class="asset-icons">
+                            <img src="../ASSET/havena1.png" onclick="changeVideo('haven', 1)">
+                            <img src="../ASSET/havena2.png" onclick="changeVideo('haven', 2)">
+                            <img src="../ASSET/havena3.png" onclick="changeVideo('haven', 3)">
+                            <img src="../ASSET/havena4.png" onclick="changeVideo('haven', 4)">
+                        </div>
+                        <div class="video-abilities">
+                            <video id="havenVideo" controls>
+                                <source src="../ASSET/haven.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="char1info">
+                        Haven adalah satu-satunya map dengan tiga site, memberikan strategi pertahanan dan serangan yang unik.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="maps1">
+                    <img src="../ASSET/maps41.png">
+                </div>
+                <div class="char1description">
+                    <h1 class="char1nama">
+                        Split
+                    </h1>
+                    <div class="asset-container">
+                        <div class="asset-icons">
+                            <img src="../ASSET/splita1.png" onclick="changeVideo('split', 1)">
+                            <img src="../ASSET/splita2.png" onclick="changeVideo('split', 2)">
+                            <img src="../ASSET/splita3.png" onclick="changeVideo('split', 3)">
+                            <img src="../ASSET/splita4.png" onclick="changeVideo('split', 4)">
+                        </div>
+                        <div class="video-abilities">
+                            <video id="splitVideo" controls>
+                                <source src="../ASSET/split.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="char1info">
+                        Split memiliki area tengah yang sempit dan zipline untuk pergerakan vertikal yang unik.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="maps1">
+                    <img src="../ASSET/maps51.png">
+                </div>
+                <div class="char1description">
+                    <h1 class="char1nama">
+                        Ascent
+                    </h1>
+                    <div class="asset-container">
+                        <div class="asset-icons">
+                            <img src="../ASSET/ascenta1.png" onclick="changeVideo('ascent', 1)">
+                            <img src="../ASSET/ascenta2.png" onclick="changeVideo('ascent', 2)">
+                            <img src="../ASSET/ascenta3.png" onclick="changeVideo('ascent', 3)">
+                            <img src="../ASSET/ascenta4.png" onclick="changeVideo('ascent', 4)">
+                        </div>
+                        <div class="video-abilities">
+                            <video id="ascentVideo" controls>
+                                <source src="../ASSET/ascent.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="char1info">
+                        Ascent memiliki pintu otomatis yang bisa dikontrol untuk membatasi akses ke site tertentu.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="maps1">
+                    <img src="../ASSET/maps21.png">
+                </div>
+                <div class="char1description">
+                    <h1 class="char1nama">
+                        Icebox
+                    </h1>
+                    <div class="asset-container">
+                        <div class="asset-icons">
+                            <img src="../ASSET/iceboxa1.png" onclick="changeVideo('icebox', 1)">
+                            <img src="../ASSET/iceboxa2.png" onclick="changeVideo('icebox', 2)">
+                            <img src="../ASSET/iceboxa3.png" onclick="changeVideo('icebox', 3)">
+                            <img src="../ASSET/iceboxa4.png" onclick="changeVideo('icebox', 4)">
+                        </div>
+                        <div class="video-abilities">
+                            <video id="iceboxVideo" controls>
+                                <source src="../ASSET/icebox.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="char1info">
+                        Icebox memiliki struktur kompleks dengan zipline dan banyak posisi vertikal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logofooter">
+            <div class="footerlogo"><img src=""></div>
+            <div class="footertext"><img src=""></div>
+        </div>
+        <div class="isifooter">
+            <ul class="list2">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="agents.html">Agents</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="reportbug.html">Report Bug</a></li>
+            </ul>
+            <label class="copy">
+                Project Palorant<br>
+                ©Copyright 2025 Palorant
+            </label>
+        </div>
+    </footer>
+
+    <script src="mapsscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(270deg, #6b84ca, #1f3069);
+    animation: gradientMove 5s ease-in-out infinite;
+    color: white;
+    cursor: default;
+}
+
+/* Bagian Atas  */
+
+nav {
+    background-color: black;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Buat rata tengah */
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Beri jarak antar menu */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: #ece7e1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ff4655;
+    color: #ff4655;
+}
+
+
+/* Nav Agents */
+
+.boxcontainer {
+    display: flex;
+    margin-top: 4.5vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #222; /* Sesuaikan dengan warna navbar */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.box {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.box img {
+    width: 80px; /* Sesuaikan ukuran */
+    height: auto;
+    margin-top: 10px;
+}
+
+.box span {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.box.phoenix:hover {
+    background-color: #ff4655;
+}
+
+.box.astra:hover {
+    background-color: #8a2be2;
+}
+
+.box.sage:hover {
+    background-color: #32cd32;
+}
+
+.box.sova:hover {
+    background-color: #1e90ff;
+}
+
+.box.raze:hover {
+    background-color: #ff4500;
+}
+
+/* agents */
+
+.container {
+    /* width: 80%;
+    /* background-color: #444; */
+    /* padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white; */ 
+    display: none;
+}
+
+.container.active {
+    display: flex; /* Tampilkan agent yang dipilih */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    /* background-color: #222; */
+}
+
+.box.active {
+    /* background-color: red; */
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+/* Gambar agent lebih besar di kiri */
+.character1 {
+    position: relative;
+    width: 300px; /* Ukuran kartu */
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin-right: 20vh;
+}
+
+.character1:hover {
+    transform: scale(1.05);
+}
+
+.character1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.character1.phoenix {
+    background: linear-gradient(135deg, #ff4500, #ffae42);
+    border: 2px solid #ff4500;
+}
+
+.character1.astra {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    border: 2px solid #6a0dad;
+}
+
+.character1.sage {
+    background: linear-gradient(135deg, #2e8b57, #66cdaa);
+    border: 2px solid #2e8b57;
+}
+
+.character1.sova {
+    background: linear-gradient(135deg, #1e90ff, #4682b4);
+    border: 2px solid #1e90ff;
+}
+
+.character1.raze {
+    background: linear-gradient(135deg, #ff0000, #ff6347);
+    border: 2px solid #ff0000;
+}
+
+.box.active.phoenix {
+    background-color: #ff4500 !important;
+}
+
+.box.active.astra {
+    background-color: #8a2be2 !important;
+}
+
+.box.active.sage {
+    background-color: #32cd32 !important;
+}
+
+.box.active.sova {
+    background-color: #1e90ff !important;
+}
+
+.box.active.raze {
+    background-color: #ff4500 !important;
+}
+
+
+.char1description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Jarak antar elemen */
+}
+
+/* Supaya teks tidak terlalu panjang */
+.char1info {
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    max-width: 600px;
+}
+
+.char1nama {
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Membuat abilities dalam bentuk grid 2x2 */
+.abilities-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-rows: repeat(2, auto); /* 2 baris */
+    gap: 10px; /* Jarak antar ikon */
+    justify-items: center; /* Pusatkan tiap ikon */
+    align-items: center;
+    width: 150px; /* Sesuaikan lebar grid */
+}
+
+
+.abilities-icons img {
+    width: 70px; /* Ukuran ikon ability */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.abilities-icons img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.video-abilities {
+    flex-grow: 1;
+    max-width: 400px; /* Batasi ukuran video */
+}
+
+.video-abilities video {
+    width: 100%;
+    max-width: 400px; /* Atur ukuran maksimum */
+    height: 240px; /* Tetapkan tinggi agar proporsional (16:9) */
+    object-fit: cover; /* Pastikan konten tetap rapi */
+    border-radius: 10px;
+}
+
+.abilities-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* Abilities dalam bentuk kolom */
+.abilities-icons {
+    display: flex;
+    flex-direction: column; /* Membuat ikon ability dalam kolom */
+    gap: 10px;
+}
+
+
+/* Bagian Bawah */
+
+footer {
+    background-color: black; 
+    color: white;
+    padding: 2vw 0;
+    text-align: center;
+}
+
+.footerlogo img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.footertext img {
+    width: 150px;
+    height: auto;
+}
+
+.isifooter ul {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 1vw;
+}
+
+.isifooter ul li {
+    display: inline-block;
+}
+
+.isifooter ul li a {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* font-family: 'Arial', sans-serif; */
+    transition: color 0.3s;
+}
+
+.isifooter ul li a:hover {
+    color: red;
+}
+
+.copy {
+    margin-top: 2vw;
+    font-size: 0.8rem;
+}

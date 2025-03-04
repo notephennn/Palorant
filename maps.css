@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ece7e1;
+    cursor: default;
+}
+
+/* Bagian Atas  */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Buat rata tengah */
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Beri jarak antar menu */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: #ece7e1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ff4655;
+    color: #ff4655;
+}
+
+/* Nav Agents */
+
+.boxcontainer {
+    display: flex;
+    margin-top: 4.5vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #222; /* Sesuaikan dengan warna navbar */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.box {
+    padding: 10px 15px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.box img {
+    width: 90px; /* Sesuaikan ukuran */
+    height: auto;
+    margin-top: 20px;
+}
+
+.box span {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.box:hover {
+    background-color: red; /* Hover effect */
+}
+
+/* Bagian Bawah */
+
+footer {
+    background-color: black; 
+    color: white;
+    padding: 2vw 0;
+    text-align: center;
+}
+
+.footerlogo img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.footertext img {
+    width: 150px;
+    height: auto;
+}
+
+.isifooter ul {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 1vw;
+}
+
+.isifooter ul li {
+    display: inline-block;
+}
+
+.isifooter ul li a {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* font-family: 'Arial', sans-serif; */
+    transition: color 0.3s;
+}
+
+.isifooter ul li a:hover {
+    color: red;
+}
+
+.copy {
+    margin-top: 2vw;
+    font-size: 0.8rem;
+}
+
+/* maps */
+
+.container {
+    /* width: 80%;
+    /* background-color: #444; */
+    /* padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white; */ 
+    display: none;
+}
+
+.container.active {
+    display: flex; /* Tampilkan agent yang dipilih */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    /* background-color: #222; */
+}
+
+.box.active {
+    background-color: red;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.maps1 {
+    flex: 0 0 500px; /* Ukuran gambar lebih besar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps1 img {
+    width: 100%; /* Agar responsif */
+    max-width: 700px; /* Batasi ukuran maksimal */
+    height: auto;
+}
+
+.char1description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Jarak antar elemen */
+    padding-left: 70px;
+    font-size: 20px;
+    color: black;
+}
+
+.char1nama {
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.asset-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-rows: repeat(2, auto); /* 2 baris */
+    gap: 10px; /* Jarak antar ikon */
+    justify-items: center; /* Pusatkan tiap ikon */
+    align-items: center;
+    width: 150px; /* Sesuaikan lebar grid */
+}
+
+.asset-icons img {
+    width: 100px; /* Ukuran ikon ability */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    background-color: black;
+}
+
+.asset-icons img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.asset-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* Abilities dalam bentuk kolom */
+.asset-icons {
+    display: flex;
+    flex-direction: column; /* Membuat ikon ability dalam kolom */
+    gap: 10px;
+}
+
+.video-abilities {
+    flex-grow: 1;
+    max-width: 400px; /* Batasi ukuran video */
+}
+
+.video-abilities video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}

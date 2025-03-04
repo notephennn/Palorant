@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ece7e1;
+    cursor: default;
+}
+
+/* Bagian Atas  */
+
+nav {
+    background-color: black;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Buat rata tengah */
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Beri jarak antar menu */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: #ece7e1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ff4655;
+    color: #ff4655;
+}
+
+
+/* Bagian Bawah */
+
+footer {
+    background-color: black; 
+    color: white;
+    padding: 2vw 0;
+    text-align: center;
+}
+
+.footerlogo img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.footertext img {
+    width: 150px;
+    height: auto;
+}
+
+.isifooter ul {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 1vw;
+}
+
+.isifooter ul li {
+    display: inline-block;
+}
+
+.isifooter ul li a {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* font-family: 'Arial', sans-serif; */
+    transition: color 0.3s;
+}
+
+.isifooter ul li a:hover {
+    color: red;
+}
+
+.copy {
+    margin-top: 2vw;
+    font-size: 0.8rem;
+}
+
+/* Agents */
+
+.agents {
+    padding: 50px 0;
+    background-color: #ece7e1;
+    text-align: center;
+}
+
+.kepala {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ece7e1;
+}
+
+.kepala h2 {
+    font-size: 4vw;
+    /* font-family: 'Viking'; */
+    color: black; 
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Tambahkan bayangan agar terlihat di background terang */
+}
+
+.agents-list {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #ece7e1;
+    position: relative;
+    overflow: hidden;
+}
+
+.agent-card {
+    background: #292929;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    min-width: 200px; 
+    position: relative;
+    transform-origin: center;
+    overflow: hidden;
+}
+
+.agent-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.agent-card h3 {
+    color: white;
+    margin: 10px 0;
+}
+
+.agent-card p {
+    color: #d3d3d3;
+}
+
+.agent-card:hover {
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+/* Intro */
+
+/* Bagian Palorant Intro */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.palorantIntro {
+    background: linear-gradient(270deg, #2b4793, #172554);
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease-in-out infinite;
+    color: white;
+    padding: 100px 5%;
+    text-align: center;
+    /* border-radius: 10px; */
+}
+
+.palorantIntro h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 40px; /* Tambah jarak bawah */
+}
+
+/* Layout Kolom */
+.introColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Tambah jarak antar elemen */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bagian Kiri (Teks) */
+.introLeft {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.introLeft h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.introLeft p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Bagian Kanan (Gambar) */
+.introRight {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.introRight video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+
+.indexHeader {
+    color: #ece7e1;
+    height: 105vh;
+    padding: 50px 5%;
+    background-image: url(../ASSET/bgfix.png);
+    background-position: 50% 85%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; 
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    /* animation: moveBackground 5s ease-in-out infinite alternate; */
+    background-size: contain;
+}
+
+.indexHeader .text-content {
+    max-width: 50%; /* Batasi lebar teks agar tidak melebar */
+}
+  
+.indexHeader p {
+    font-weight: bold;
+    color: black;
+    margin: 0 90vh 25px 0;
+}
+  
+.indexHeader h1 {
+    font-size: 800%;
+    margin: 0 90vh 25px 0;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+.indexHeader a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 95%;
+    text-transform: uppercase;
+    color: #ece7e1;
+    background-color: #ff4654;
+    padding: 20px 70px;
+    border-radius: 10px;
+    margin: 0 90vh 0 0;
+}
+  
+.indexHeader a:hover {
+    background-color: #0f1923;
+    transition: 0.5s;
+}

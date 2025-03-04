@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ece7e1;
+    cursor: default;
+}
+
+/* Bagian Atas  */
+
+nav {
+    background-color: black;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Buat rata tengah */
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Beri jarak antar menu */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    color: #ece7e1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ff4655;
+    color: #ff4655;
+}
+
+
+/* Bagian Bawah */
+
+footer {
+    background-color: black; 
+    color: white;
+    padding: 2vw 0;
+    text-align: center;
+}
+
+.footerlogo img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.footertext img {
+    width: 150px;
+    height: auto;
+}
+
+.isifooter ul {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 1vw;
+}
+
+.isifooter ul li {
+    display: inline-block;
+}
+
+.isifooter ul li a {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* font-family: 'Arial', sans-serif; */
+    transition: color 0.3s;
+}
+
+.isifooter ul li a:hover {
+    color: red;
+}
+
+.copy {
+    margin-top: 2vw;
+    font-size: 0.8rem;
+}
+
+/* news */
+
+main {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+/* News Section */
+.news {
+    max-width: 900px;
+    margin: auto;
+}
+
+.news h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* News Card */
+.news-card {
+    display: flex;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-card img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
