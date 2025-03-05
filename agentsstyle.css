@@ -234,6 +234,9 @@ nav a:hover {
     line-height: 1.5;
     color: white;
     max-width: 600px;
+    /* padding-left: 0.5rem; */
+    padding-top: 1rem;
+    text-align: justify;
 }
 
 .char1nama {
@@ -249,11 +252,13 @@ nav a:hover {
 .abilities-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 kolom */
-    grid-template-rows: repeat(2, auto); /* 2 baris */
+    grid-template-rows: repeat(2, auto); /* 2 baris 
     gap: 10px; /* Jarak antar ikon */
     justify-items: center; /* Pusatkan tiap ikon */
     align-items: center;
     width: 150px; /* Sesuaikan lebar grid */
+    padding-right: 7rem;
+    padding-bottom: 6rem;
 }
 
 
