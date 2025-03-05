@@ -238,6 +238,16 @@ footer {
     color: black;
 }
 
+.char1info {
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    max-width: 600px;
+    /* padding-left: 0.5rem; */
+    padding-top: 1rem;
+    text-align: justify;
+}
+
 .asset-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 kolom */
@@ -246,6 +256,8 @@ footer {
     justify-items: center; /* Pusatkan tiap ikon */
     align-items: center;
     width: 150px; /* Sesuaikan lebar grid */
+    padding-right: 4rem;
+    padding-bottom: 5rem;
 }
 
 .asset-icons img {
