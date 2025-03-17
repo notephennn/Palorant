@@ -112,12 +112,17 @@ footer {
     margin: 120px auto 20px; /* Diberi margin atas agar tidak bertabrakan dengan navbar */
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan shadow untuk efek depth */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container h2 {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
+}
+
+input, textarea, select, button, .checkbox-container {
+    font-family: inherit; /* Menggunakan font dari .container */
 }
 
 /* Form Elements */
