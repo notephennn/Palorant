@@ -164,3 +164,54 @@ footer {
     margin-top: 20px;
     font-size: 0.8rem;
 }
+
+/* ======= RELATED NEWS SECTION ======= */
+.related-news {
+    width: 70%;
+    background: white;
+    padding: 30px;
+    margin: 60px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.related-news h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.news-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-item {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.news-item img {
+    width: 100%;
+    height: 180px; /* Gambar lebih besar */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.news-item a {
+    display: block;
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-item:hover {
+    transform: scale(1.07);
+}
