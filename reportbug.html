@@ -30,9 +30,10 @@
             </select>
             <textarea id="bugDescription" rows="4" placeholder="Deskripsi Bug" required></textarea>
             <input type="file" id="bugScreenshot" accept="image/*">
-            <label>
-                <input type="checkbox" id="followUpPermission"> Izinkan email tindak lanjut
-            </label>
+            <div class="checkbox-container">
+                <input type="checkbox" id="followUpPermission">
+                <span>Izinkan email tindak lanjut</span>
+            </div>
             <button type="submit">Kirim Laporan</button>
         </form>
     </div>

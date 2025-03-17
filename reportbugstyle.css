@@ -102,28 +102,72 @@ footer {
     font-size: 0.8rem;
 }
 
+/* Container Form Report Bug */
 .container {
     background: #2a2a2a;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     width: 50%;
-    margin: auto;
+    max-width: 600px; /* Batas maksimal agar form tidak terlalu lebar */
+    margin: 120px auto 20px; /* Diberi margin atas agar tidak bertabrakan dengan navbar */
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambahkan shadow untuk efek depth */
 }
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Form Elements */
 input, textarea, select {
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     margin: 10px 0;
-    border: none;
+    border: 1px solid #555;
     border-radius: 5px;
+    font-size: 16px;
+    background: #f5f5f5;
+    color: black;
+    transition: border 0.3s;
 }
+
+input:focus, textarea:focus, select:focus {
+    border: 1px solid #ff4655;
+    outline: none;
+}
+
+/* Gaya untuk Upload Screenshot */
+input[type="file"] {
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Checkbox Styling */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* Tombol Kirim */
 button {
     background: #ff4655;
     color: white;
-    padding: 10px;
+    padding: 14px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    width: 100%;
 }
+
 button:hover {
     background: #e03e4d;
 }
