@@ -17,6 +17,26 @@
         </ul>
     </nav>
 
+    <div class="container">
+        <h2>Report Bug</h2>
+        <form id="bugReportForm">
+            <input type="text" id="username" placeholder="Nama Pengguna" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="server" required>
+                <option value="">Pilih Server</option>
+                <option value="Asia">Asia</option>
+                <option value="Eropa">Eropa</option>
+                <option value="Amerika">Amerika</option>
+            </select>
+            <textarea id="bugDescription" rows="4" placeholder="Deskripsi Bug" required></textarea>
+            <input type="file" id="bugScreenshot" accept="image/*">
+            <label>
+                <input type="checkbox" id="followUpPermission"> Izinkan email tindak lanjut
+            </label>
+            <button type="submit">Kirim Laporan</button>
+        </form>
+    </div>
+
     <footer>
         <div class="logofooter">
             <div class="footerlogo"><img src=""></div>
@@ -36,5 +56,7 @@
             </label>
         </div>
     </footer>
+
+    <script src="reportbugscript.js"></script>
 </body>
 </html>
