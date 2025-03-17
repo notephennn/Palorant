@@ -148,10 +148,16 @@ input[type="file"] {
 /* Checkbox Styling */
 .checkbox-container {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    align-items: center; /* Agar checkbox sejajar dengan teks */
+    gap: 8px; /* Beri jarak antara checkbox dan teks */
     font-size: 14px;
     margin-top: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }
 
 
