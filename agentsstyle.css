@@ -18,7 +18,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(270deg, #6b84ca, #1f3069);
+    background: linear-gradient(#0F1923, #FF4655);
     animation: gradientMove 5s ease-in-out infinite;
     color: white;
     cursor: default;

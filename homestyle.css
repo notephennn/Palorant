@@ -189,7 +189,7 @@ footer {
 }
 
 .palorantIntro {
-    background: linear-gradient(270deg, #2b4793, #172554);
+    background: linear-gradient(#0F1923, #FF4655);
     background-size: 200% 200%;
     animation: gradientMove 5s ease-in-out infinite;
     color: white;
@@ -301,4 +301,23 @@ footer {
 .indexHeader a:hover {
     background-color: #0f1923;
     transition: 0.5s;
+}
+
+/* ==============RESPONSIVITAS==============*/
+@media (max-width: 1024px) {
+    nav {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    
 }
