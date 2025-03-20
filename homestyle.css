@@ -321,20 +321,35 @@ footer {
     }
 
     .indexHeader .text-content {
-        max-width: 90%;
+        width: 100%;
     }
 
     .indexHeader h1 {
-        font-size: 250%;
+        font-size: 350%; /* Mengecilkan teks "5v5" agar pas */
+        margin-left: 17vh;
+        line-height: 1; /* Jarak antar teks lebih kecil */
+        /* margin-top: 4vh; */
     }
 
     .indexHeader p {
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* Sesuaikan ukuran teks deskripsi */
+        /* padding-left: 5vh; */
+        margin-top: 30px;
+        margin-left: 15%; 
+        width: 30%;
+        margin-bottom: 1;
     }
 
     .indexHeader a {
-        font-size: 80%;
-        padding: 12px 40px;
+        font-size: 10px; 
+        /* Sesuaikan ukuran font tombol */
+        /* padding: 14px 65px;  */
+        padding: 10px 50px;
+        /* Kurangi padding tombol agar proporsional */
+        margin-left: 15%;
+        /* margin-top: 1; */
+        border: 1px solid black;
+        width: 24%;
     }
 }
 
