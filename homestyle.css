@@ -363,7 +363,7 @@ footer {
     }
 
     .palorantIntro {
-        padding: 60px 3%; /* Diperkecil */
+        padding: 55px 3%; /* Diperkecil */
     }
 
     .introColumn {
@@ -376,11 +376,11 @@ footer {
     }
 
     .introLeft h2 {
-        font-size: 1.5rem; 
+        font-size: 1.2rem; 
     }
 
     .introLeft p {
-        font-size: 0.9rem; 
+        font-size: 0.8rem; 
     }
 
     .introRight {
@@ -389,6 +389,52 @@ footer {
 
     .introRight video {
         max-width: 350px; 
+    }
+
+    .agents {
+        padding: 20px 0; /* Diperkecil */
+    }
+
+    .kepala h2 {
+        font-size: 3.5vw; /* Diperkecil */
+    }
+
+    .agents-list {
+        gap: 8px; /* Kurangi jarak antar elemen */
+    }
+
+    .agent-card {
+        width: 120px; /* Diperkecil */
+        min-width: 120px; /* Diperkecil */
+        padding: 8px; /* Diperkecil */
+    }
+
+    .agent-card h3 {
+        font-size: 0.75rem; /* Diperkecil */
+    }
+
+    .agent-card p {
+        font-size: 0.65rem; /* Diperkecil */
+    }
+
+    .footerlogo img {
+        width: 35px; /* Diperkecil */
+    }
+
+    .footertext img {
+        width: 100px; /* Diperkecil */
+    }
+
+    .isifooter ul {
+        gap: 1vw; /* Diperkecil */
+    }
+
+    .isifooter ul li a {
+        font-size: 0.75rem; /* Diperkecil */
+    }
+
+    .copy {
+        font-size: 0.7rem; /* Diperkecil */
     }
 }
 
