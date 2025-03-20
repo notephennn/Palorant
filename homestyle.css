@@ -126,6 +126,7 @@ footer {
     /* font-family: 'Viking'; */
     color: black; 
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Tambahkan bayangan agar terlihat di background terang */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .agents-list {
@@ -152,6 +153,7 @@ footer {
     position: relative;
     transform-origin: center;
     overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .agent-card img {
@@ -196,6 +198,7 @@ footer {
     padding: 100px 5%;
     text-align: center;
     /* border-radius: 10px; */
+    /* c     */
 }
 
 .palorantIntro h1 {
