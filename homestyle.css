@@ -309,7 +309,18 @@ footer {
 /* ==============RESPONSIVITAS==============*/
 /* ===========TABLET========== */
 @media (max-width: 768px) {
-    
+    nav {
+        padding: 15px 3%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.75rem; /* Mengecilkan teks menu */
+    }
     
     .indexHeader {
         height: 80vh;
@@ -348,8 +359,36 @@ footer {
         /* Kurangi padding tombol agar proporsional */
         margin-left: 15%;
         /* margin-top: 1; */
-        border: 1px solid black;
         width: 24%;
+    }
+
+    .palorantIntro {
+        padding: 60px 3%; /* Diperkecil */
+    }
+
+    .introColumn {
+        gap: 30px; 
+        max-width: 800px; 
+    }
+
+    .introLeft {
+        max-width: 350px; 
+    }
+
+    .introLeft h2 {
+        font-size: 1.5rem; 
+    }
+
+    .introLeft p {
+        font-size: 0.9rem; 
+    }
+
+    .introRight {
+        max-width: 400px; 
+    }
+
+    .introRight video {
+        max-width: 350px; 
     }
 }
 
