@@ -307,20 +307,54 @@ footer {
 }
 
 /* ==============RESPONSIVITAS==============*/
-@media (max-width: 1024px) {
-    nav {
-        padding: 15px;
-        gap: 10px;
+/* ===========TABLET========== */
+@media (max-width: 768px) {
+    
+    
+    .indexHeader {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    nav ul {
-        gap: 15px;
+    .indexHeader .text-content {
+        max-width: 90%;
     }
 
-    nav a {
-        padding: 10px 12px;
+    .indexHeader h1 {
+        font-size: 250%;
+    }
+
+    .indexHeader p {
         font-size: 0.9rem;
     }
 
-    
+    .indexHeader a {
+        font-size: 80%;
+        padding: 12px 40px;
+    }
+}
+
+/* ============LAYAR HP=========== */
+@media (max-width: 480px) {
+    .indexHeader {
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .indexHeader h1 {
+        font-size: 200%;
+    }
+
+    .indexHeader p {
+        font-size: 0.8rem;
+    }
+
+    .indexHeader a {
+        font-size: 75%;
+        padding: 10px 30px;
+    }
 }
