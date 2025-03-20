@@ -349,3 +349,79 @@ footer {
     margin-top: 2vw;
     font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 3%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.75rem; /* Mengecilkan teks menu */
+    }
+    
+    .boxcontainer {
+        flex-wrap: wrap; /* Agar tetap rapi jika layar lebih kecil */
+        padding-top: 20px;
+    }
+
+    .box img {
+        width: 50px; /* Diperkecil */
+    }
+
+    .box span {
+        font-size: 12px; /* Diperkecil */
+    }
+
+    .container.active {
+        flex-direction: column;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .character1 {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+        margin-left: 55px;
+    }
+
+    .char1description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .char1nama {
+        font-size: 40px;
+    }
+
+    .char1info {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .abilities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abilities-icons {
+        width: 100px;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+
+    .abilities-icons img {
+        width: 60px;
+    }
+
+    .video-abilities video {
+        max-width: 300px;
+        height: 180px;
+    }
+}

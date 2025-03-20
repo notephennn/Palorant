@@ -437,24 +437,3 @@ footer {
         font-size: 0.7rem; /* Diperkecil */
     }
 }
-
-/* ============LAYAR HP=========== */
-@media (max-width: 480px) {
-    .indexHeader {
-        height: 70vh;
-        padding: 20px;
-    }
-
-    .indexHeader h1 {
-        font-size: 200%;
-    }
-
-    .indexHeader p {
-        font-size: 0.8rem;
-    }
-
-    .indexHeader a {
-        font-size: 75%;
-        padding: 10px 30px;
-    }
-}
