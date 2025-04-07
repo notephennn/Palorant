@@ -437,3 +437,115 @@ footer {
         font-size: 0.7rem; /* Diperkecil */
     }
 }
+
+/* ===========MOBILE 375px========== */
+@media (max-width: 375px) {
+    nav {
+        padding: 13px 2%;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        gap: 8px; /* Jarak antar item dikurangi */
+    }
+
+    nav a {
+        padding: 6px 8px;
+        font-size: 0.6rem; /* Ukuran font diperkecil */
+    }
+
+    .indexHeader {
+        height: auto;
+        padding: 80px 5% 30px 5%;
+        text-align: center;
+    }
+
+    .indexHeader h1 {
+        font-size: 200%;
+        margin: 10px 0;
+    }
+
+    .indexHeader p {
+        font-size: 0.75rem;
+        margin: 10px 0;
+    }
+
+    .indexHeader a {
+        font-size: 0.75rem;
+        padding: 10px 30px;
+        margin: 15px 0;
+        width: auto;
+    }
+
+    .palorantIntro {
+        padding: 40px 5%;
+    }
+
+    .introColumn {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .introLeft, .introRight {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .introLeft h2 {
+        font-size: 1.1rem;
+    }
+
+    .introLeft p {
+        font-size: 0.8rem;
+    }
+
+    .introRight video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .kepala h2 {
+        font-size: 6vw;
+    }
+
+    .agents-list {
+        gap: 10px;
+        padding: 10px 5px;
+    }
+
+    .agent-card {
+        width: 100px;
+        min-width: 100px;
+        padding: 5px;
+    }
+
+    .agent-card h3 {
+        font-size: 0.7rem;
+    }
+
+    .agent-card p {
+        font-size: 0.6rem;
+    }
+
+    .footerlogo img {
+        width: 30px;
+    }
+
+    .footertext img {
+        width: 80px;
+    }
+
+    .isifooter ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .isifooter ul li a {
+        font-size: 0.7rem;
+    }
+
+    .copy {
+        font-size: 0.65rem;
+        margin-top: 10px;
+    }
+}
