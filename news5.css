@@ -216,3 +216,90 @@ footer {
 .news-item:hover {
     transform: scale(1.07);
 }
+
+
+/* RESPONSIVITAS TABLET */ 
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 3%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.75rem; /* Mengecilkan teks menu */
+    }
+
+    .footerlogo img {
+        width: 40px;
+    }
+
+    .footertext img {
+        width: 120px;
+    }
+
+    .isifooter ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .isifooter ul li a {
+        font-size: 12px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+    /* BERITA UTAMA */
+    .news-container {
+        width: 90%;
+        margin-top: 80px;
+    }
+
+    .news-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .news-content h3 {
+        font-size: 1rem;
+    }
+
+    .news-content p {
+        font-size: 0.95rem;
+    }
+
+    .signature {
+        font-size: 0.9rem;
+    }
+
+    /* RELATED NEWS */
+    .news-container,
+    .related-news {
+        width: 90%;
+    }
+
+    .news-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .news-content h3 {
+        font-size: 1rem;
+    }
+
+    .news-content p {
+        font-size: 0.95rem;
+    }
+
+    .news-item a {
+        font-size: 1rem;
+    }
+
+    .news-item img {
+        height: 150px;
+    }
+}
