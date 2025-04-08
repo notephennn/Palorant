@@ -227,13 +227,16 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        padding: 15px;
+        padding: 15px 3%;
+    }
+
+    nav ul {
         gap: 15px;
     }
 
     nav a {
-        padding: 10px;
-        font-size: 12px;
+        padding: 10px 15px;
+        font-size: 0.75rem; /* Mengecilkan teks menu */
     }
 
     .footerlogo img {
@@ -273,6 +276,8 @@ footer {
     .pala {
         width: 60vw;
         height: 10vh;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
     }
 
     .subcontainer h2 {
