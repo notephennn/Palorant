@@ -222,3 +222,79 @@ footer {
 .read-more:hover {
     background-color: #d63b48;
 }
+
+/* RESPONSIVITAS TABLET */ 
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .footerlogo img {
+        width: 40px;
+    }
+
+    .footertext img {
+        width: 120px;
+    }
+
+    .isifooter ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .isifooter ul li a {
+        font-size: 12px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+    .bag2 {
+        padding: 3vh;
+    }
+
+    .container {
+        padding: 3vw;
+        border-radius: 20px;
+    }
+
+    .subcontainer {
+        gap: 5vh;
+    }
+
+    .pala {
+        width: 60vw;
+        height: 10vh;
+    }
+
+    .subcontainer h2 {
+        font-size: 8vw;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        min-height: 40px;
+    }
+
+    .card p {
+        font-size: 14px;
+        min-height: 80px;
+    }
+
+    .card img {
+        max-height: 150px;
+    }
+
+    .read-more {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
