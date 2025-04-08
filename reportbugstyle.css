@@ -182,3 +182,60 @@ button {
 button:hover {
     background: #e03e4d;
 }
+
+/* RESPONSIVITAS */ 
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 3%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.75rem; /* Mengecilkan teks menu */
+    }
+
+    .footerlogo img {
+        width: 40px;
+    }
+
+    .footertext img {
+        width: 120px;
+    }
+
+    .isifooter ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .isifooter ul li a {
+        font-size: 12px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+        margin: 100px auto 20px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    input, textarea, select, button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .checkbox-container {
+        font-size: 13px;
+    }
+}
