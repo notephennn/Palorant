@@ -53,8 +53,6 @@ nav a:hover {
     color: #ff4655;
 }
 
-/* Nav Agents */
-
 .boxcontainer {
     display: flex;
     margin-top: 4.5vw;
@@ -293,4 +291,102 @@ footer {
     width: 100%;
     max-width: 550px;
     height: auto;
+}
+
+/* RESPONSIVITAS TABLET */ 
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 3%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.75rem; /* Mengecilkan teks menu */
+    }
+    
+    .boxcontainer {
+        flex-wrap: wrap; /* Agar tetap rapi jika layar lebih kecil */
+        padding-top: 20px;
+    }
+
+    .box img {
+        width: 50px; /* Diperkecil */
+    }
+
+    .box span {
+        font-size: 12px; /* Diperkecil */
+    }
+
+    .container.active {
+        padding: 10px;
+    }
+
+    .maps1 {
+        flex: 0 0 300px;
+    }
+
+    .maps1 img {
+        max-width: 100%;
+    }
+
+    .char1description {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .char1nama {
+        font-size: 36px;
+        padding-bottom: 1rem;
+    }
+
+    .char1info {
+        font-size: 16px;
+        padding-top: 0.5rem;
+        max-width: 100%;
+    }
+
+    .asset-icons {
+        width: 100px;
+        gap: 6px;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .asset-icons img {
+        width: 65px;
+    }
+
+    .video-abilities {
+        max-width: 250px;
+    }
+
+    .video-abilities img {
+        max-width: 300px;
+    }
+
+    .footerlogo img {
+        width: 40px;
+    }
+
+    .footertext img {
+        width: 120px;
+    }
+
+    .isifooter ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .isifooter ul li a {
+        font-size: 0.85rem;
+    }
+
+    .copy {
+        font-size: 0.7rem;
+    }
 }
