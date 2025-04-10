@@ -437,3 +437,224 @@ footer {
         font-size: 0.7rem; /* Diperkecil */
     }
 }
+
+/* ==============RESPONSIVITAS==============*/
+/* ===========MOBILE (320px)========== */
+@media (max-width: 320px) {
+    nav {
+        padding: 10px 2%; 
+        overflow-x: auto; 
+        justify-content: flex-start; 
+    }
+
+    nav ul {
+        flex-direction: row; 
+        gap: 5px; 
+        white-space: nowrap; 
+        margin: 0; 
+        padding: 0; 
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block; 
+    }
+
+    nav a {
+        padding: 8px 8px;
+        font-size: 0.65rem; 
+        border-bottom: none !important;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid #ff4655 !important; 
+        color: #ff4655;
+    }
+
+    .indexHeader {
+        height: auto;
+        padding: 20px 3%; /* Kurangi padding atas bawah */
+        text-align: left; /* Atur teks ke kiri sebagai awal */
+        background-position: center top;
+        display: flex; /* Gunakan flexbox untuk tata letak sejajar */
+        flex-direction: row; /* Atur item menjadi baris */
+        justify-content: space-between; /* Beri ruang antara teks dan gambar */
+        align-items: center; /* Sejajarkan vertikal */
+    }
+
+    .header-content {
+        flex: 1; /* Beri ruang sisa untuk konten teks */
+        padding-right: 15px; /* Beri sedikit jarak antara teks dan gambar */
+    }
+
+    .indexHeader {
+        height: auto;
+        padding: 20px 3%;
+        text-align: left; /* Mulai dari kiri */
+        background-position: center right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 200px;
+        padding-right: 40%;
+        display: flex;
+        flex-direction: column; /* Atur menjadi kolom */
+        justify-content: center; /* Pusatkan vertikal */
+        align-items: flex-start; /* Rata kiri */
+    }
+
+    .indexHeader p {
+        font-size: 0.5rem;
+        margin: 0 0 2px 0;
+        padding-top: 10px;
+        width: 75%;
+        order: 1; /* Urutan pertama */
+    }
+
+    .indexHeader h1 {
+        font-size: 120%;
+        margin: 5px 25px 10px 0;
+        padding-left: 15px;
+        line-height: 1;
+        order: 2; /* Urutan kedua */
+    }
+
+    .indexHeader a {
+        font-size: 0.5rem;
+        padding: 8px 15px;
+        padding-left: 15px;
+        margin-left: 5px;
+        margin: 10px 0 0 17px;
+        display: inline-block;
+        width: auto;
+        order: 3; /* Urutan ketiga */
+    }   
+
+    .palorantIntro {
+        padding: 40px 3%; /* Padding lebih kecil */
+        text-align: center;
+    }
+
+    .introColumn {
+        flex-direction: column; /* Jadi satu kolom */
+        gap: 20px; /* Jarak antar elemen lebih kecil */
+        max-width: 90%; /* Lebar maksimum lebih kecil */
+        margin: 0 auto;
+    }
+
+    .introLeft {
+        max-width: 100%; /* Teks memenuhi lebar */
+        text-align: center;
+    }
+
+    .introLeft h2 {
+        font-size: 1.1rem; /* Ukuran font lebih kecil dari tablet */
+        margin-bottom: 10px;
+    }
+
+    .introLeft p {
+        font-size: 0.9rem; /* Ukuran font lebih besar */
+        line-height: 1.5;
+    }
+
+    .introRight {
+        max-width: 100%; /* Video memenuhi lebar */
+    }
+
+    .introRight video {
+        max-width: 90%; /* Video lebih kecil sedikit */
+    }
+
+    .agents {
+        padding: 15px 0; /* Padding lebih kecil */
+    }
+
+    .kepala h2 {
+        font-size: 12vw; /* Ukuran font menyesuaikan lebar */
+    }
+
+    .agents-list {
+        flex-wrap: wrap; /* Bungkus item jika tidak muat */
+        justify-content: center; /* Tengahkan item */
+        gap: 10px; /* Jarak antar item lebih besar dari tablet */
+        padding: 10px;
+    }
+
+    .agent-card {
+        width: calc(50% - 10px); /* Dua kartu per baris */
+        min-width: 0; /* Agar bisa mengecil */
+        padding: 10px; /* Padding lebih kecil */
+    }
+
+    .agent-card img {
+        max-width: 100%; /* Gambar responsif */
+        height: auto;
+    }
+
+    .agent-card h3 {
+        font-size: 0.9rem; /* Ukuran font lebih besar dari tablet */
+        margin: 8px 0;
+    }
+
+    .agent-card p {
+        font-size: 0.8rem; /* Ukuran font lebih besar dari tablet */
+    }
+
+    footer {
+        padding: 10px 2%; /* Padding lebih kecil, mirip navbar */
+        text-align: center; /* Pusatkan konten footer */
+        display: flex;
+        flex-direction: column; /* Atur elemen footer menjadi kolom */
+        align-items: center; /* Pusatkan item secara horizontal */
+    }
+
+    .logofooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px; /* Jarak lebih kecil */
+        margin-bottom: 5px; /* Margin bawah lebih kecil */
+    }
+
+    .footerlogo img {
+        width: 25px; /* Ukuran logo lebih kecil */
+    }
+
+    .footertext img {
+        width: 80px; /* Ukuran teks logo lebih kecil */
+    }
+
+    .isifooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vw;
+        margin-top: 0;
+        margin-bottom: 5px;
+        overflow-x: auto; /* Tambahkan scroll jika list terlalu panjang */
+    }
+
+    .isifooter ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.3vw; /* Jarak lebih kecil */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        white-space: nowrap;
+    }
+
+    .isifooter ul li {
+        display: inline-block;
+    }
+
+    .isifooter ul li a {
+        font-size: 0.6rem; /* Ukuran font lebih kecil */
+        padding: 3px; /* Padding lebih kecil */
+    }
+
+    .copy {
+        font-size: 0.55rem; /* Ukuran font lebih kecil */
+        margin-top: 5px;
+        text-align: center; /* Pusatkan teks copyright */
+    }   
+}
