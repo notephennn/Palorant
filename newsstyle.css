@@ -304,3 +304,136 @@ footer {
     }
 }
 
+/* ==============RESPONSIVITAS==============*/
+/* ===========MOBILE (320px)========== */
+@media (max-width: 320px) {
+    nav {
+        padding: 10px 2%; 
+        overflow-x: auto; 
+        justify-content: flex-start; 
+    }
+
+    nav ul {
+        flex-direction: row; 
+        gap: 5px; 
+        white-space: nowrap; 
+        margin: 0; 
+        padding: 0; 
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block; 
+    }
+
+    nav a {
+        padding: 8px 8px;
+        font-size: 0.65rem; 
+        border-bottom: none !important;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid #ff4655 !important; 
+        color: #ff4655;
+    }
+
+    .bag2 {
+        padding: 2vh;
+        min-height: auto; /* Biarkan tinggi konten menyesuaikan */
+    }
+
+    .container {
+        padding: 5vw;
+        border-radius: 10px;
+        height: auto; /* Biarkan tinggi konten menyesuaikan */
+    }
+
+    .subcontainer {
+        gap: 3vh;
+    }
+
+    .pala {
+        width: 80vw;
+        height: auto;
+        padding: 6vh 0;
+    }
+
+    .subcontainer h2 {
+        font-size: 10vw;
+    }
+
+    .news {
+        grid-template-columns: 1fr; /* Satu kolom untuk mobile */
+        grid-template-rows: auto; /* Tinggi otomatis */
+        gap: 3vw;
+    }
+
+    .card {
+        padding: 3vw;
+        gap: 1vh;
+    }
+
+    .card h3 {
+        font-size: 5vw;
+        min-height: auto;
+        margin-bottom: 1vw;
+    }
+
+    .card img {
+        max-height: 150px;
+    }
+
+    .card p {
+        font-size: 3vw;
+        min-height: auto;
+        margin-bottom: 2vw;
+    }
+
+    .read-more {
+        padding: 8px 12px;
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+
+    footer {
+        padding: 5vw 0;
+    }
+
+    .logofooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footerlogo img {
+        width: 30px;
+    }
+
+    .footertext img {
+        width: 90px;
+    }
+
+    .isifooter ul {
+        flex-direction: column;
+        gap: 1vw;
+        margin-top: 2vw;
+        align-items: center;
+    }
+
+    .isifooter ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .isifooter ul li a {
+        font-size: 0.7rem;
+        padding: 3px 0;
+        display: block;
+    }
+
+    .copy {
+        font-size: 0.6rem;
+        margin-top: 3vw;
+        text-align: center;
+    }
+}
