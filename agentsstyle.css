@@ -432,3 +432,156 @@ footer {
         font-size: 0.7rem;
     }
 }
+
+@media (max-width: 320px) {
+    nav {
+        padding: 10px 2%; 
+        overflow-x: auto; 
+        justify-content: flex-start; 
+    }
+
+    nav ul {
+        flex-direction: row; 
+        gap: 5px; 
+        white-space: nowrap; 
+        margin: 0; 
+        padding: 0; 
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block; 
+    }
+
+    nav a {
+        padding: 8px 8px;
+        font-size: 0.65rem; 
+        border-bottom: none !important;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid #ff4655 !important; 
+        color: #ff4655;
+    }
+
+    .boxcontainer {
+        margin-top: 15vw; /* Sesuaikan margin atas */
+        padding: 5px 0; /* Padding lebih kecil */
+        flex-wrap: wrap; /* Bungkus item jika tidak muat */
+        justify-content: center; /* Tengahkan item */
+        gap: 5px; /* Jarak antar box lebih kecil */
+    }
+
+    .box {
+        padding: 5px 8px; /* Padding lebih kecil */
+    }
+
+    .box img {
+        width: 40px; /* Ukuran gambar lebih kecil */
+        margin-top: 5px;
+    }
+
+    .box span {
+        font-size: 10px; /* Ukuran font lebih kecil */
+        margin-top: 3px;
+    }
+
+    .container.active {
+        flex-direction: column; /* Tumpuk gambar dan deskripsi */
+        width: 95%; /* Lebar container lebih besar */
+        padding: 10px; /* Padding lebih kecil */
+        margin: 10px auto; /* Margin lebih kecil */
+    }
+
+    .character1 {
+        width: 180px; /* Ukuran kartu lebih kecil */
+        height: 270px;
+        margin-right: 0; /* Hilangkan margin kanan */
+        margin-bottom: 15px; /* Beri margin bawah */
+    }
+
+    .char1nama {
+        font-size: 24px; /* Ukuran nama lebih kecil */
+        margin-bottom: 5px;
+    }
+
+    .char1info {
+        font-size: 12px; /* Ukuran info lebih kecil */
+        line-height: 1.3; /* Jarak antar baris lebih rapat */
+        max-width: 100%; /* Info memenuhi lebar */
+        padding-top: 0.2rem;
+    }
+
+    .abilities-container {
+        flex-direction: column; /* Tetap kolom untuk menumpuk ikon dan video */
+        align-items: center; /* Tengahkan item */
+        gap: 10px;
+    }
+
+    .abilities-icons {
+        display: flex; /* Ubah menjadi flex container untuk satu baris */
+        flex-direction: row; /* Atur item menjadi baris horizontal */
+        gap: 8px; /* Jarak antar ikon dalam baris */
+        width: 100%; /* Lebar ikon container */
+        justify-content: center; /* Tengahkan ikon dalam baris */
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .abilities-icons img {
+        width: 50px; /* Ukuran ikon sedikit lebih besar jika perlu */
+    }
+
+    .video-abilities {
+        max-width: 100%;
+    }
+
+    .video-abilities video {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    footer {
+        padding: 5vw 0; /* Padding menyesuaikan */
+        text-align: center;
+    }
+
+    .logofooter {
+        display: flex;
+        flex-direction: column; /* Logo dan teks jadi vertikal */
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footerlogo img {
+        width: 30px; /* Ukuran logo lebih kecil */
+    }
+
+    .footertext img {
+        width: 90px; /* Ukuran teks logo lebih kecil */
+    }
+
+    .isifooter ul {
+        flex-direction: column; /* List footer jadi vertikal */
+        gap: 1vw;
+        margin-top: 2vw;
+        align-items: center;
+    }
+
+    .isifooter ul li {
+        display: block; /* Setiap link jadi satu baris */
+        text-align: center;
+    }
+
+    .isifooter ul li a {
+        font-size: 0.7rem; /* Ukuran font lebih kecil */
+        padding: 3px 0; /* Padding vertikal */
+        display: block; /* Agar hover memenuhi lebar */
+    }
+
+    .copy {
+        font-size: 0.6rem; /* Ukuran font lebih kecil */
+        margin-top: 3vw;
+    }
+}
